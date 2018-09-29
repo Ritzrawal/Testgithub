@@ -1,6 +1,4 @@
-/*var A = ['Data Storage','File Storage','BigObject storage'];
-var B = ['Address', 'Child account', 'account', 'contact', 'Zip to torrs', 'Email activity', 'send email'] ;
-*/
+
 import React, { Component } from 'react';
 import { AppRegistry, FlatList, StyleSheet, Text, View } from 'react-native';
 
@@ -10,7 +8,7 @@ export default class FlatListBasics extends Component {
       <View style={styles.container}>
         <FlatList   
         data={[
-
+           {key: 'Rawal'}, {key: '34,555'}, {key: '4.4 GB'}, {key: '68%'},
           {key: 'Address'}, {key: '752,886'}, {key: '1.4 GB'}, {key: '38%'},
            {key: 'email'}, {key: '559,923'}, {key: '1.1 GB'}, {key: '28%'}, 
            {key: 'Account'},{key: '248,840'}, {key: '486.0 MB'}, {key: '13%'},
@@ -29,7 +27,6 @@ const styles = StyleSheet.create({
    paddingTop: 22
   },
   item: {
-   //alignItems:'space-between',
    flex:1,
     padding: 10,
     fontSize: 18,
@@ -37,5 +34,4 @@ const styles = StyleSheet.create({
   },
 })
 
-// skip this line if using Create React Native App
 AppRegistry.registerComponent('AwesomeProject', () => FlatListBasics);
